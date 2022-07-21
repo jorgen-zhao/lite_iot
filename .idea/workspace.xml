@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b13da264-8311-49b4-ac8b-dacf0a234839" name="Changes" comment="add README" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\jorgen\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="25fdxYuRkIApJHcuZY7uzsrfEwk" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/12/github-copilot-intellij-1.1.20.1417.zip" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\jorgen\project\LiteIoT\protocol" />
+      <recent name="D:\jorgen\project\LiteIoT\img\mqtt" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b13da264-8311-49b4-ac8b-dacf0a234839" name="Changes" comment="" />
+      <created>1645922327302</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645922327302</updated>
+      <workItem from="1645922330747" duration="61000" />
+      <workItem from="1645922656911" duration="659000" />
+      <workItem from="1646060786605" duration="555000" />
+      <workItem from="1655335283150" duration="292000" />
+      <workItem from="1655336843789" duration="358000" />
+      <workItem from="1655386276476" duration="1086000" />
+      <workItem from="1655420338193" duration="2070000" />
+      <workItem from="1655519223079" duration="558000" />
+      <workItem from="1655519808456" duration="1954000" />
+      <workItem from="1655521799682" duration="12000" />
+      <workItem from="1655521905339" duration="738000" />
+      <workItem from="1655522678384" duration="83000" />
+      <workItem from="1655522804457" duration="97000" />
+      <workItem from="1655522923800" duration="41000" />
+      <workItem from="1655522981766" duration="88000" />
+      <workItem from="1655523085291" duration="49000" />
+      <workItem from="1655523155640" duration="11000" />
+      <workItem from="1655594089032" duration="3131000" />
+      <workItem from="1655598527613" duration="368000" />
+      <workItem from="1655600354952" duration="599000" />
+    </task>
+    <task id="LOCAL-00001" summary="add mqtt profile">
+      <created>1646060998826</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646060998826</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add README">
+      <created>1655335440865</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655335440865</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add mqtt profile" />
+    <MESSAGE value="add README" />
+    <option name="LAST_COMMIT_MESSAGE" value="add README" />
+  </component>
+</project>
