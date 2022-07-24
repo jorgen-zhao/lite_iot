@@ -32,7 +32,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           { text: 'LiteIoT', link: '/pages/aa83a5/' },
-          { text: '北斗通信电力采集', link: '/note/javascript/' },
+          { text: 'imitate-protocol', link: '/note/javascript/' },
 
           // { text: 'TypeScript', link: '/pages/51afd6/' },
         ]
