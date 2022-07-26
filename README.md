@@ -12,6 +12,7 @@ A distributed project with microservice, building a lite IoT project to review a
 1. 设备定时上报数据
 2. server → device：能正常响应且执行
 3. 实现OTA功能
+![lite_iot功能图示](/images/lite_iot.png)
 
 ### 🤔事项
 
