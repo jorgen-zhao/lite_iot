@@ -1,4 +1,4 @@
-# LiteIoT
+# lite_iot
 A distributed project with microservice, building a lite IoT project to review and organize my knowledge, avoid forgeting and comfusing.
 ## IoT物联网项目
 
