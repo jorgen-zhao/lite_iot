@@ -1,0 +1,14 @@
+syntax = "proto3";
+package com.liteiot.admin.modules.admin.protobuf;
+
+message clientNotify {
+    bool alarmNotify = 1;
+    bool groupChange = 2;
+    bool statusChange = 3;
+    string imei = 4;
+    int64 msgCount = 5;
+}
+
+message userCheckin {
+    string bearer  = 1;
+}

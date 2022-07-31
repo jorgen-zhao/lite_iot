@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liteiot.admin.modules.admin.mapper.ResourceAuthorityMapper">
+    <resultMap id="BaseResultMap" type="com.liteiot.admin.modules.admin.entity.ResourceAuthority">
+        <!--
+          WARNING - @mbggenerated
+        -->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="role_id" jdbcType="VARCHAR" property="roleId"/>
+        <result column="resource_id" jdbcType="VARCHAR" property="resourceId"/>
+        <result column="resource_type" jdbcType="VARCHAR" property="resourceType"/>
+    </resultMap>
+    <delete id="deleteByAuthorityIdAndResourceType">
+    delete from base_resource_authority where role_id = #{authorityId} and resource_type = #{resourceType}
+  </delete>
+</mapper>

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package com.liteiot.admin.modules.admin.protobuf;
+
+message RealTimePacketInfo {
+    string imei = 1;
+    int32  batteryLevel  = 2;
+    double leanDegrees = 3;
+    int64  reportTime = 4;
+    double degree = 5;// 方向(单位为度数)
+    double displacement = 6;// 唯一
+    string azimuth = 7;// 方位角
+}
