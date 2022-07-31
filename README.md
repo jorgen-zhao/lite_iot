@@ -1,6 +1,28 @@
 # lite_iot
+
+# 项目介绍
+
 A distributed project with microservice, building a lite IoT project to review and organize my knowledge, avoid forgeting and comfusing.
-## IoT物联网项目
+
+# 项目架构
+
+# 里程碑
+
+- [ ] 搭建`RBAC`框架，实现人员、角色、资源动态配置
+- [ ] 搭建hub层，解析设备上报指令
+- [ ] 设备分组，根据人员获取组织下的设备信息
+- [ ] OTA设计与实现
+- [ ] 接入微信服务号，设备上报通过服务号进行推送（支持动态配置&推送）
+- [ ] 配置服务器和docker容器以及SpringBoot应用的监控（prometheus+Grafana+auctuator）
+- [ ] 引入kafka,架构调整
+- [ ] 引入easy-poi,支持Excel批量导入导出
+- [ ] 对接海康威视，支持设备上报时，抓拍图片
+- [ ] 引入websocket，设备上报时实时推送前端呈现
+- [ ] 上报预处理方案（流程引擎？）
+- [ ] 日志链路数据追踪 + 注解式打印日志（优雅打印日志以及数据埋点）
+- [ ] 接入GrayLog分布式日志收集框架
+- [ ] Docker打包，支持Docker + Jenkis部署
+- [ ] ElasticSeach引入，迁移上报报文数据
 
 ### 🚏代办
 
