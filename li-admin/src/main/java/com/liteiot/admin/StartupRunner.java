@@ -4,7 +4,6 @@ import com.liteiot.admin.modules.admin.biz.DeviceInfoBiz;
 import com.liteiot.admin.modules.admin.biz.SystemConfigBiz;
 import com.liteiot.admin.modules.admin.biz.UserBiz;
 import com.liteiot.common.dto.TokenResp;
-import com.liteiot.admin.modules.admin.entity.SystemConfig;
 import com.liteiot.admin.modules.admin.handler.BatchOperationHandler;
 import com.liteiot.admin.modules.admin.handler.MonitorHandler;
 import com.liteiot.admin.modules.admin.handler.SystemCountHandler;

@@ -4,8 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.liteiot.admin.modules.admin.biz.AlarmThresholdBiz;
 import com.liteiot.admin.modules.admin.biz.DeviceExtraConfigBiz;
 import com.liteiot.admin.modules.admin.biz.PacketInfoBiz;
-import com.liteiot.admin.modules.admin.entity.DeviceExtraConfig;
-import com.liteiot.admin.modules.admin.entity.DeviceInfo;
 import com.liteiot.admin.modules.admin.handler.SpinAndLeanCalculateHandler;
 import com.liteiot.admin.modules.admin.handler.TemperatureRectifyHandler;
 import com.liteiot.admin.modules.admin.redis.CommonConfigCache;
