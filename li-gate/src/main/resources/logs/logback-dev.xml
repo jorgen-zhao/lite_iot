@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--debug=true等同于配置一个OnConsoleStatusListener ，用于在解析配置文件错误时，输出内部状态日志
+    该配置不会影响log本身，也不会影响日志级别-->
+<configuration debug="true">
+
+    <!-- 定义日志文件的存储地址 -->
+    <property name="LOG_DIR" value="/home/logs/bdg01/gateway"/>
+    <!-- 定义服务名-->
+    <property name="SERVER_NAME" value="gateway"/>
+
+    <!--  定义日志的输出格式  -->
+    <property name="pattern_file" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %-40.40(%logger{40}) : %msg%n"/>
+
+    <appender name="GELF" class="de.siegmar.logbackgelf.GelfUdpAppender">
+        <!-- Graylog服务的地址 -->
+        <graylogHost>ip</graylogHost>
+        <!-- UDP Input端口 -->
+        <graylogPort>12201</graylogPort>
+        <!-- 最大GELF数据块大小（单位：字节），508为建议最小值，最大值为65467 -->
+        <maxChunkSize>508</maxChunkSize>
+        <!-- 是否使用压缩 -->
+        <useCompression>true</useCompression>
+        <encoder class="de.siegmar.logbackgelf.GelfEncoder">
+            <!-- 是否发送原生的日志信息 -->
+            <includeRawMessage>false</includeRawMessage>
+            <includeMarker>true</includeMarker>
+            <includeMdcData>true</includeMdcData>
+            <includeCallerData>false</includeCallerData>
+            <includeRootCauseData>false</includeRootCauseData>
+            <!-- 是否发送日志级别的名称，否则默认以数字代表日志级别 -->
+            <includeLevelName>true</includeLevelName>
+            <shortPatternLayout class="ch.qos.logback.classic.PatternLayout">
+                <pattern>%m%nopex</pattern>
+            </shortPatternLayout>
+            <fullPatternLayout class="ch.qos.logback.classic.PatternLayout">
+                <pattern>%d - %-5level %logger{35} - %msg%n</pattern>
+            </fullPatternLayout>
+
+            <!-- 配置应用名称（服务名称），通过staticField标签可以自定义一些固定的日志字段 -->
+            <staticField>app_name:li-gate</staticField>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <!-- 只打印INFO及以上级别的日志 -->
+            <level>INFO</level>
+        </filter>
+    </appender>
+
+    <!--  用于输出到文件的INFO日志  -->
+    <appender name="INFO_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/${SERVER_NAME}-info.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_DIR}/${SERVER_NAME}-info-%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>${pattern_file}</Pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!--  用于输出到文件的ERROR日志  -->
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/${SERVER_NAME}-error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/${SERVER_NAME}-error-%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${pattern_file}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="GELF"/>
+        <appender-ref ref="INFO_FILE"/>
+        <appender-ref ref="ERROR_FILE"/>
+    </root>
+
+</configuration>

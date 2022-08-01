@@ -24,7 +24,7 @@
     -->
     <appender name="GELF" class="de.siegmar.logbackgelf.GelfUdpAppender">
         <!-- Graylog服务的地址 -->
-        <graylogHost>175.178.127.231</graylogHost>
+        <graylogHost>ip</graylogHost>
         <!-- UDP Input端口 -->
         <graylogPort>12201</graylogPort>
         <!-- 最大GELF数据块大小（单位：字节），508为建议最小值，最大值为65467 -->
