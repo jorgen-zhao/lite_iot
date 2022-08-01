@@ -27,6 +27,7 @@
         <module>li-gate</module>
         <module>li-admin</module>
         <module>li-monitor</module>
+        <module>li-hub</module>
 
     </modules>
 
