@@ -26,6 +26,7 @@
         <module>li-dev-base</module>
         <module>li-gate</module>
         <module>li-admin</module>
+        <module>li-monitor</module>
 
     </modules>
 
