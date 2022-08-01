@@ -21,8 +21,8 @@ A distributed project with microservice, building a lite IoT project to review a
 - [ ] 上报预处理方案（流程引擎？）
 - [ ] 日志链路数据追踪 + 注解式打印日志（优雅打印日志以及数据埋点）
 - [ ] 接入GrayLog分布式日志收集框架
-- [ ] Docker打包，支持Docker + Jenkis部署
-- [ ] ElasticSeach引入，迁移上报报文数据
+- [ ] Docker打包，支持Docker + Jenkins部署
+- [ ] ElasticSearch引入，迁移上报报文数据
 
 ### 🚏代办
 
