@@ -5,6 +5,31 @@
 A distributed project with microservice, building a lite IoT project to review and organize my knowledge, avoid forgeting and comfusing.
 
 # 项目架构
+#### 中台化前端
+
+集成`d2admin`中台化前端，优化前端架构和功能布局，支撑中台服务化的应用开发。
+
+#### JWT鉴权
+
+通过`JWT`的方式来进行用户认证和信息传递，保证服务之间用户无状态的传递。
+
+#### 监控
+
+利用Spring Boot Admin 来监控各个独立Service的运行状态；利用Sentinel Dashboard来实时查看接口的运行状态和调用频率等。
+
+#### 负载均衡
+
+将服务保留的rest进行代理和网关控制，除了平常经常使用的node.js、nginx外，Spring Cloud系列的zuul和ribbon，可以帮我们进行正常的网关管控和负载均衡。~~其中扩展和借鉴国外项目的扩展基于JWT的`Zuul限流插件`，方面进行限流。~~
+
+#### 服务注册与调用
+
+基于`Nacos`来实现的服务注册与调用，在Spring Cloud中使用Feign, 我们可以做到使用HTTP请求远程服务时能与调用本地方法一样的编码体验，开发者完全感知不到这是远程方法，更感知不到这是个HTTP请求。【**后续准备更改为web-flux**】
+
+#### 熔断与流控
+
+集成阿里`Sentinel`进行接口流量控制，通过熔断和降级处理避免服务之间的调用“雪崩”。
+
+![系统架构图示](./doc/img/系统架构.png)
 
 # 里程碑
 
