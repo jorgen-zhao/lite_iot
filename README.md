@@ -38,7 +38,7 @@ JSON Web Token (JWT)是一个开放标准(RFC 7519)，它定义了一种紧凑�
 
 ### 如何工作
 
-![jwt-workflow](\images\jwt-workflow.png)
+![jwt-workflow](/images/jwt-workflow.png)
 
 
 
